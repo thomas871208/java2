@@ -1,6 +1,7 @@
 package com.TTS;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,8 @@ public class ListAndSet {
 		a.add(88);
 		a.add(88);
 		System.out.println(a);
+//		ArrayList<Integer> b = Arrays.asList(85,86,87,88,88,88).
+//		System.out.println(b);
 		
 		Set set= new HashSet();
 		String b1 = new String ("杜豐于");
