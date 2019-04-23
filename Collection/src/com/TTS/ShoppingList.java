@@ -21,9 +21,10 @@ public class ShoppingList {
 		break;
 	}
 	else {
-	System.out.println("代購清單:");
+
 	Scanner s = new Scanner(System.in);
 	int f = scanner.nextInt();
+	System.out.println("代購清單:");
 	map.put(shop, value + f);
 	System.out.println(map);
 	}	
