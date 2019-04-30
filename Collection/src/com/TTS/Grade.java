@@ -31,12 +31,12 @@ public class Grade {
 	}
 	public static int rangeTest1(int m) throws ArithmeticException{
 		if (m<0||m>100) 
-			throw new ArithmeticException("數字不能小於零或大於一百");
+			throw new ArithmeticException("數學成績不能小於零或大於一百");
 			return m;
 	}
 	public static int rangeTest2(int eng) throws ArithmeticException{
 		if (eng<0||eng>100) 
-			throw new ArithmeticException("數字不能小於零或大於一百");
+			throw new ArithmeticException("英文成績不能小於零或大於一百");
 			return eng;
 	}
 }
