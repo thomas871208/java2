@@ -13,8 +13,9 @@ public class ScoreTester {
 		System.out.println("請輸入英文成績");
 		Score english = new Score(scanner.nextLine());
 		System.out.println((math.value + english.value)/2);
-	}catch (RangeException e) {
+	}catch (ScoreFormatException e) {
 		System.out.println(e.getMessage());
+		e.printStackTrace();
 	}
 	}
 }
