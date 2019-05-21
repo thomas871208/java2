@@ -4,7 +4,7 @@ import java.io.*;
 public class JavaExam {
     public static void main(String[] args){
         try {
-            File file = new File("result.tx.txt");
+            File file = new File("result.txt");
             FileWriter fileWriter = new FileWriter(file);
             fileWriter.write(74);
             fileWriter.write(97);
