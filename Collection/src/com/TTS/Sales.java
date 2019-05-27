@@ -15,7 +15,15 @@ public class Sales {
 		String[] a = line.split(" ");
 		int b = Integer.parseInt(a[1]);
 		if(a.length ==2) {
-			System.out.println(a[0]+" "+a[1]);
+			if(b >= 0 &&b <= 10) {
+			System.out.println(a[0]+" "+a[1]+"  獎金5000元");
+			}
+			else if(b >= 10 && b <= 15) {
+			System.out.println(a[0]+" "+a[1]+"  獎金8000元");	
+			}
+			else if(b>15) {
+			System.out.println(a[0]+" "+a[1]+"  獎金10000元");	
+			}
 		}
 
 		
