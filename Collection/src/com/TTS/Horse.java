@@ -13,14 +13,19 @@ public class Horse extends Thread{
 	*/
 	@Override
 	public void run() {
-		for(int i=1;i<=1000;i++) {
-		System.out.println(getName()+i);	
-		}
+		
+		for(int i=1;i<=100;i++) {
+			StringBuilder spaces = new StringBuilder();
+			for(int j=0;j<i;j++) {
+				spaces.append(" ");
+			}
+		System.out.println(spaces+getName()+i);	
+			
 		try {
-			sleep(1000);
+			sleep(100);
 		} catch (InterruptedException e) {
-
 			e.printStackTrace();
+		}
 		}
 		super.run();
 	}
