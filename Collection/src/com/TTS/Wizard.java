@@ -1,11 +1,11 @@
 package com.TTS;
 
 public class Wizard extends Thread{
-	private void Thunder(){
+	public synchronized void Thunder(){
 		System.out.println("thunder start");
 		try {
-			sleep(1000);
-		}catch (Exception e) {
+			sleep(2000);
+		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		System.out.println("thunder end");		
@@ -16,10 +16,11 @@ public class Wizard extends Thread{
 	
 	
 	public static void main(String[] args) {
-	Wizard w1 = new Wizard();
-	Wizard w2 = new Wizard();
-	w1.start();
-	w2.start();
+	Wizard wizard = new Wizard();
+	Thread t1 = new Thread(wizard);
+	Thread t2 = new Thread(wizard);
+	t1.start();
+	t2.start();
 			
 
 	}
